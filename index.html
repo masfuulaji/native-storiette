@@ -5,40 +5,100 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Cerpen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+        />
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+            #page-wrapper {
+                background-color: rgb(0, 0, 0, 1);
+            }
+            #page-wrapper::after {
+                content: "";
+                background-image: url("assets/img/nature.jpg");
+                background-size: cover;
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+            }
+            .header {
+                background-color: #5f7161;
+                padding: 8px;
+                position: sticky;
+                top: 0;
+                z-index: 9999;
+                border-radius: 8px;
+            }
+            .sidebar {
+                background-color: #6d8b74;
+                min-height: 100vh;
+                padding: 20px;
+                width: 15%;
+                position: fixed;
+                left: 5%;
+            }
+            .content {
+                background-color: #6d8b74;
+                position: relative;
+                left: 25%;
+                margin: 10px;
+                width: 70%;
+            }
+            .navbar-link {
+                text-decoration: none;
+                /* border-style: solid; */
+                padding: 10px;
+                border-radius: 5px;
+                /* border-color: #CC9C75; */
+                margin: 0 5px 0 5px;
+                color: black;
+            }
+            .navbar-link:hover {
+                background-color: #cc9c75;
+            }
+        </style>
     </head>
-    <body style="margin: 0px; background-color: blue">
+    <body id="page-wrapper">
         <div>
-            <header style="background-color: red; padding: 15px">header</header>
-            <main style="display: flex;">
+            <header class="header">
+                <div style="display: flex">
+                    <div style="margin-right: auto">
+                        <h2 style="margin-left: 15px">Logo</h2>
+                    </div>
+                    <div style="margin: auto 0 auto; display: flex">
+                        <a href="#" class="navbar-link">Link</a>
+                        <a href="#" class="navbar-link">Link</a>
+                        <a href="#" class="navbar-link">Link</a>
+                        <a href="#" class="navbar-link">Link</a>
+                    </div>
+                </div>
+            </header>
+            <main style="display: flex">
                 <div>
-                    <aside
-                        style="
-                            background-color: yellow;
-                            min-height: 100vh;
-                            padding: 20px;
-                            width: 15%;
-                            position: fixed;
-                            left: 5%;
-                            top: 0;
-                        "
-                    >
-                        aside
+                    <aside class="sidebar">
+                        <div style=" height: 150px">
+                            <img
+                                src="assets/img/foto_mhs.jpg"
+                                style="
+                                    max-height: 100%;
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width: 50%;
+                                "
+                            />
+                        </div>
                     </aside>
                 </div>
-                <div style="width: 100vw;">
-                    <div
-                        id="content"
-                        style="
-                            background-color: green;
-                            position: relative;
-                            left: 25%;
-                            margin: 10px;
-                            width: 70%;
-                            height: 1000px;
-                        "
-                    >
-                        content
-                    </div>
+                <div style="width: 100vw">
+                    <div class="content">content</div>
                 </div>
             </main>
         </div>
