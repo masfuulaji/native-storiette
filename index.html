@@ -9,81 +9,35 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
         />
-        <style>
-            body {
-                font-family: "Lato", sans-serif;
-            }
-            #page-wrapper {
-                background-color: rgb(0, 0, 0, 1);
-            }
-            #page-wrapper::after {
-                content: "";
-                background-image: url("assets/img/nature.jpg");
-                background-size: cover;
-                opacity: 0.5;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                position: absolute;
-                z-index: -1;
-            }
-            .header {
-                background-color: #5f7161;
-                padding: 8px;
-                position: sticky;
-                top: 0;
-                z-index: 9999;
-                border-radius: 8px;
-            }
-            .sidebar {
-                background-color: #6d8b74;
-                min-height: 100vh;
-                padding: 20px;
-                width: 15%;
-                position: fixed;
-                left: 5%;
-            }
-            .content {
-                background-color: #6d8b74;
-                position: relative;
-                left: 25%;
-                margin: 10px;
-                width: 70%;
-            }
-            .navbar-link {
-                text-decoration: none;
-                /* border-style: solid; */
-                padding: 10px;
-                border-radius: 5px;
-                /* border-color: #CC9C75; */
-                margin: 0 5px 0 5px;
-                color: black;
-            }
-            .navbar-link:hover {
-                background-color: #cc9c75;
-            }
-        </style>
+        <link rel="stylesheet"  href="assets/css/main.css"/>
+
     </head>
     <body id="page-wrapper">
         <div>
             <header class="header">
                 <div style="display: flex">
                     <div style="margin-right: auto">
-                        <h2 style="margin-left: 15px">Logo</h2>
+                        <h2 style="margin-left: 15px">Puisi</h2>
                     </div>
                     <div style="margin: auto 0 auto; display: flex">
-                        <a href="#" class="navbar-link">Link</a>
-                        <a href="#" class="navbar-link">Link</a>
-                        <a href="#" class="navbar-link">Link</a>
-                        <a href="#" class="navbar-link">Link</a>
+                        <a
+                            onclick="viewPage('puisi-pengertian')"
+                            class="navbar-link"
+                            >Pengertian</a
+                        >
+                        <a onclick="viewPage('puisi-ciri2')" class="navbar-link"
+                            >Ciri-ciri</a
+                        >
+                        <a onclick="viewPage('puisi-jenis')" class="navbar-link"
+                            >Jenis</a
+                        >
                     </div>
                 </div>
             </header>
             <main style="display: flex">
                 <div>
                     <aside class="sidebar">
-                        <div style=" height: 150px">
+                        <div style="height: 150px">
                             <img
                                 src="assets/img/foto_mhs.jpg"
                                 style="
@@ -92,15 +46,182 @@
                                     margin-left: auto;
                                     margin-right: auto;
                                     width: 50%;
+                                    border-radius: 10%;
                                 "
                             />
+                            <div style="width: 100%">
+                                <h1 style="text-align: center; color: white">
+                                    Masfu'ul Aji
+                                </h1>
+                                <div style="text-align: center">
+                                    <p style="font-size: 12px; color: white">
+                                        Student at UIN Maulana malik ibrahim
+                                        Malang
+                                    </p>
+                                </div>
+                                <div
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    "
+                                >
+                                    <a
+                                        href="https://github.com/masfuulaji"
+                                        class="link-profile"
+                                        >Github</a
+                                    >
+                                    <a
+                                        href="https://twitter.com/masfu_ul"
+                                        class="link-profile"
+                                        >Twitter</a
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </aside>
                 </div>
                 <div style="width: 100vw">
-                    <div class="content">content</div>
+                    <div class="content">
+                        <article id="puisi-pengertian">
+                            <h1>Pengertian Puisi</h1>
+                            <p>
+                                Menurut Kamus Besar Bahasa Indonesia (KBBI),
+                                puisi merupakan ragam sastra yang bahasanya
+                                terikat oleh irama, matra, rima, serta
+                                penyusunan larik dan bait. Puisi juga diartikan
+                                sebagai gubahan dalam bahasa yang bentuknya
+                                dipilih dan ditata secara cermat. Baca artikel
+                                detikedu, "Pengertian Puisi, Ciri-ciri, dan
+                                Jenisnya" selengkapnya
+                            </p>
+                        </article>
+                        <article id="puisi-ciri2">
+                            <h1>Ciri-ciri Puisi</h1>
+                            <h3>
+                                Puisi lama merupakan puisi yang masih terikat
+                                oleh aturan-aturan berikut ini:
+                            </h3>
+                            <ol>
+                                <li>Jumlah kata dalam 1 baris.</li>
+                                <li>Jumlah baris dalam 1 bait.</li>
+                                <li>Persajakan (rima).</li>
+                                <li>Banyak suku kata di tiap baris.</li>
+                                <li>Irama</li>
+                            </ol>
+                            <p>Ciri-ciri puisi lama:</p>
+                            <ol>
+                                <li>Tak diketahui nama pengarangnya.</li>
+                                <li>
+                                    Merupakan sastra lisan karena disampaikan
+                                    dari mulut ke mulut.
+                                </li>
+                                <li>
+                                    Sangat terikat akan aturan-aturan, misalnya
+                                    seperti jumlah baris tiap bait, jumlah suku
+                                    kata ataupun rima.
+                                </li>
+                            </ol>
+                            <h3>Puisi Baru</h3>
+                            <p>
+                                Berbeda dengan puisi lama, puisi baru merupakan
+                                puisi yang tidak terikat lagi oleh aturan, dan
+                                bentuknya lebih bebas daripada puisi lama dalam
+                                segi jumlah baris, suku kata, ataupun rima.
+                            </p>
+                            <p>Ciri-ciri puisi baru:</p>
+                            <ol>
+                                <li>Mempunyai bentuk yang rapi, simetris.</li>
+                                <li>Persajakan akhir yang teratur.</li>
+                                <li>
+                                    Menggunakan pola sajak pantun dan syair
+                                    meskipun dengan pola yang lain.
+                                </li>
+                                <li>Umumnya puisi 4 seuntai.</li>
+                                <li>
+                                    Setiap baris atasnya sebuah gatra (kesatuan
+                                    sintaksis).
+                                </li>
+                                <li>
+                                    Setiap gatranya terdiri dari dua kata dan
+                                    4-5 suku kata.
+                                </li>
+                            </ol>
+                        </article>
+                        <article id="puisi-jenis">
+                            <h1>Jenis-jenis Puisi</h1>
+                            <h4>1. Puisi Naratif</h4>
+                            <p>
+                                Dalam puisi naratif mengungkapkan suatu cerita
+                                atau penjelasan penyair. Puisi ini terbagi
+                                menjadi dua macam, yakni balada dan romansa.
+                                Balada adalah puisi yang berisi cerita tentang
+                                orang-orang perkasa ataupun tokoh pujaan.
+                            </p>
+                            <p>
+                                Contohnya Balada Orang-orang Tercinta dan Blues
+                                untuk Bonnie karya WS Rendra. Sedangkan romansa
+                                adalah jenis puisi cerita yang memakai bahasa
+                                romantik yang berisi kisah percintaan, yang
+                                diselingi perkelahian dan petualangan.
+                            </p>
+                            <h4>2. Puisi Lirik</h4>
+                            <p>
+                                Pada jenis puisi lirik terbagi ke dalam beberapa
+                                macam, yakni elegi, serenada dan ode. Elegi
+                                adalah puisi yang mengungkapkan perasaan duka.
+                                Contohnya Elegi Jakarta karya Asrul Sani yang
+                                mengungkapkan perasaan duka penyair di Kota
+                                Jakarta.
+                            </p>
+                            <p>
+                                Sedangkan serenada merupakan sajak percintaan
+                                yang dapat dinyanyikan. Kata "serenada" sendiri
+                                bermakna nyanyian yang tepat dinyanyikan pada
+                                waktu senja.
+                            </p>
+                            <p>
+                                Sementara itu, ode adalah puisi yang berisi
+                                pujaan terhadap seseorang umumnya tokoh yang
+                                dikagumi, sesuatu hal, atau sesuatu keadaan.
+                                Contohnya seperti Diponegoro karya Chairil Anwar
+                                dan Ode buat Proklamator karya Leon Agusta.
+                            </p>
+                            <h4>3. Puisi Deskriptif</h4>
+                            <p>
+                                Dalam jenis puisi ini, penyair bertindak sebagai
+                                pemberi kesan terhadap keadaan/peristiwa, benda,
+                                atau suasana yang dipandang menarik perhatian.
+                                Puisi yang termasuk kedalam jenis puisi
+                                deskriptif, misalnya satire dan puisi yang
+                                bersifat kritik sosial.
+                            </p>
+                            <p>
+                                Satire adalah puisi yang mengungkapkan perasaan
+                                ketidakpuasan penyair terhadap suatu keadaan,
+                                namun dengan cara menyindir atau menyatakan
+                                keadaan sebaliknya.
+                            </p>
+                            <p>
+                                Sedangkan puisi kritik sosial adalah puisi yang
+                                juga menyatakan ketidakpuasan penyair terhadap
+                                keadaan atau terhadap diri seseorang, namun
+                                dengan cara membeberkan kepincangan atau ketidak
+                                beresan keadaan atau orang tersebut. Kesan
+                                penyairan ini juga dapat kita hayati dalam
+                                puisi-puisi impresionistik yang mengungkapkan
+                                kesan penyair terhadap suatu hal.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </main>
         </div>
+        <script>
+            function viewPage(id) {
+                var divElement = document.getElementById(`${id}`);
+                divElement.scrollIntoView();
+            }
+        </script>
     </body>
 </html>
